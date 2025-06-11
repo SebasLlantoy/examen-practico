@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mis primeras tablas</title>
+</head>
+<body>
+
+    <h1>TABLA DE EVALUACIONES</h1>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2"></th>
+                <th colspan="2">1ª Eval</th>
+                <th colspan="2">2ª Eval</th>
+                <th colspan="2">3ª Eval</th>
+            </tr>
+            <tr>
+                <th class="aprobados">Aprobados</th>
+                <th class="suspendidos">Suspendidos</th>
+                <th class="aprobados">Aprobados</th>
+                <th class="suspendidos">Suspendidos</th>
+                <th class="aprobados">Aprobados</th>
+                <th class="suspendidos">Suspendidos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Informática</td>
+                <td>20</td>
+                <td>2</td>
+                <td>19</td>
+                <td>3</td>
+                <td>22</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Matemáticas</td>
+                <td>10</td>
+                <td>12</td>
+                <td>15</td>
+                <td>7</td>
+                <td>12</td>
+                <td>10</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            </tfoot>
+    </table>
+
+    <h1>HORARIO SEMESTRAL</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Horas</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>8:00-9:00</td> 
+                <td class="horario-math" rowspan="2">Matemáticas</td> 
+                <td class="horario-language">Lengua</td>
+                <td class="horario-music">Música</td>
+                <td></td>
+                <td class="horario-math" rowspan="2">Matemáticas</td>
+            </tr>
+            <tr>
+                <td>9:00-10:00</td> <td>Inglés</td>
+                <td>Inglés</td>
+                <td class="horario-e-fisica">E. Física</td>
+            </tr>
+            <tr>
+                <td>10:00-10:30</td>
+                <td colspan="5" class="recreo">Recreo</td>
+            </tr>
+            <tr>
+                <td>10:30-11:30</td>
+                <td class="horario-e-fisica">E. Física</td>
+                <td class="horario-valenciano">Valenciano</td>
+                <td class="horario-language" rowspan="2">Lengua</td>
+                <td class="horario-informatica">Informática</td>
+                <td>Inglés</td>
+            </tr>
+            <tr>
+                <td>12:30-13:30</td>
+                <td class="horario-music">Música</td>
+                <td class="horario-e-fisica">E. Física</td>
+                <td class="horario-math" rowspan="2">Matemáticas</td>
+                <td class="horario-informatica">Informática</td>
+            </tr>
+            <tr>
+                <td>13:30-14:30</td>
+                <td></td>
+                <td class="horario-informatica">Informática</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            </tfoot>
+    </table>
+
+</body>
+</html>
