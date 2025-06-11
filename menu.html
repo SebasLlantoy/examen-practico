@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Simple</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-bottom: 20px;
+        }
+        ol {
+            list-style-type: decimal;
+        }
+        ul li {
+            margin-bottom: 5px;
+        }
+        ul li ul {
+            margin-left: 20px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        ul li ol {
+            margin-left: 20px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        b {
+            font-weight: bold;
+        }
+        a {
+            color: blue;
+            text-decoration: underline;
+        }
+        .contacto-info {
+            font-style: italic;
+            margin-top: 15px;
+        }
+        .contacto-valor {
+            font-style: normal;
+            font-weight: bold;
+            display: block;
+            margin-left: 20px;
+        }
+        .contacto-fax-tel {
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Menú</h1>
+    <ul>
+        <li>Inicio</li>
+        <li><b>Noticias</b>
+            <ul>
+                <li><a href="#">Recientes</a></li>
+                <li><a href="#"><b>Más leídas</b></a></li>
+                <li><a href="#">Más valoradas</a></li>
+            </ul>
+        </li>
+        <li>Articulos
+            <ol>
+                <li><b>XHTML</b></li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Otros</li>
+            </ol>
+        </li>
+        <li>Contacto
+            <div class="contacto-info">
+                Email
+                <span class="contacto-valor"><b>nombre@direccion.com</b></a></span>
+            </div>
+            <div class="contacto-info">
+                Teléfono
+                <span class="contacto-valor contacto-fax-tel">900 900 900</span>
+            </div>
+            <div class="contacto-info">
+                Fax
+                <span class="contacto-valor contacto-fax-tel">900 900 900</span>
+            </div>
+        </li>
+    </ul>
+
+</body>
+</html>
